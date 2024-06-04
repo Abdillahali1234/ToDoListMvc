@@ -1,0 +1,99 @@
+﻿
+<div class="d-flex justify-content-between">
+    <h1>Welcome @Model.User.Name</h1>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Add New To Do
+    </button>
+</div>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Add New To Do</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/ToDo/AddNewToDo" method="post">
+                    <input type="hidden" name="UserId" value="@Model.User.Id" />
+                    <label for="Title" class="form-label">Enter Title</label>
+                    <input type="text" class="form-control" id="Title" name="Title" aria-describedby="Title">
+                    <label for="description" class="form-label">Enter Description</label>
+                    <textarea class="form-control" id="description" name="Description"></textarea>
+                    <button class="btn btn-primary my-2" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>
+@{
+    if (Model.ToDos.Count >0)
+    {
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Number Task</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var todo in Model.ToDos)
+                {
+                    <tr>
+                        <th scope="row">@todo.Id</th>
+                        <td>@todo.Title</td>
+                        <td>@todo.Description</td>
+                        <td>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#editModal-@todo.Id">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <div class="modal fade" id="editModal-@todo.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editModalLabel-@todo.Id" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="editModalLabel-@todo.Id">Edit To Do</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="/ToDo/EditToDo" method="post">
+                                                <input type="hidden" name="Id" value="@todo.Id" />
+                                                <input type="hidden" name="UserId" value="@Model.User.Id" />
+                                                <label for="Title-@todo.Id" class="form-label">Enter Title</label>
+                                                <input type="text" class="form-control" value="@todo.Title" id="Title-@todo.Id" name="Title" aria-describedby="Title">
+                                                <label for="description-@todo.Id" class="form-label">Enter Description</label>
+                                                <textarea class="form-control" id="description-@todo.Id" name="Description">@todo.Description</textarea>
+                                                <button class="btn btn-primary my-2" type="submit">Save Changes</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-danger" href="/ToDo/DeleteTodo?Id=@todo.Id">
+                                <i class="bi bi-trash-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    }
+
+    else
+    {
+        <h2 class="text-success text-center my-3">Your To Do Is Empety</h2>
+    }
+
+}
