@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\backEnd_course\\.net\\codes\\session14\\ToDoList\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|d:\\backend_course\\.net\\codes\\session14\\todolist\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|solutionrelative:controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|d:\\backend_course\\.net\\codes\\session14\\todolist\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|d:\\backend_course\\.net\\codes\\session14\\todolist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|d:\\backend_course\\.net\\codes\\session14\\todolist\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|solutionrelative:controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89A7CD43-C290-4B6B-AB5F-31BE1D56BF3A}|ToDoList.csproj|d:\\backend_course\\.net\\codes\\session14\\todolist\\models\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\backEnd_course\\.net\\codes\\session14\\ToDoList\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -43,16 +43,19 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T22:35:16.501Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\backEnd_course\\.net\\codes\\session14\\ToDoList\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -60,12 +63,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T22:52:17.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T22:52:17.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AllToDO.cshtml",
               "DocumentMoniker": "D:\\backEnd_course\\.net\\codes\\session14\\ToDoList\\Views\\ToDo\\AllToDO.cshtml",
               "RelativeDocumentMoniker": "Views\\ToDo\\AllToDO.cshtml",
@@ -73,18 +75,17 @@
               "RelativeToolTip": "Views\\ToDo\\AllToDO.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T22:31:25.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T22:31:25.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ToDoController.cs",
               "DocumentMoniker": "D:\\backEnd_course\\.net\\codes\\session14\\ToDoList\\Controllers\\ToDoController.cs",
               "RelativeDocumentMoniker": "Controllers\\ToDoController.cs",
               "ToolTip": "D:\\backEnd_course\\.net\\codes\\session14\\ToDoList\\Controllers\\ToDoController.cs",
               "RelativeToolTip": "Controllers\\ToDoController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA2wCMAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T22:18:48.134Z",
               "EditorCaption": ""
@@ -99,8 +100,17 @@
               "RelativeToolTip": "Models\\ToDo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T22:16:24.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T22:16:24.515Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 770,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
